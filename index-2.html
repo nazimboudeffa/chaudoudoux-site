@@ -20,7 +20,7 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
 font-family: 'Poppins', sans-serif;
-background: #fafafa;
+background: #FFFF99;
 }
 
 p {
@@ -28,7 +28,6 @@ font-family: 'Poppins', sans-serif;
 font-size: 1.1em;
 font-weight: 300;
 line-height: 1.7em;
-color: #999;
 }
 
 a,
@@ -56,7 +55,7 @@ border: none;
 .line {
 width: 100%;
 height: 1px;
-border-bottom: 1px dashed #ddd;
+border-bottom: 1px dashed #FFFF99;
 margin: 40px 0;
 }
 
@@ -73,15 +72,15 @@ align-items: stretch;
 #sidebar {
 min-width: 250px;
 max-width: 250px;
-background: #7386D5;
-color: #fff;
+background: #5c743d;
+color: #993300;
 transition: all 0.3s;
 }
 
 #sidebar a,
 #sidebar a:hover,
 #sidebar a:focus {
-color: inherit;
+color: #993300;
 }
 
 #sidebar.active {
@@ -90,12 +89,12 @@ margin-left: -250px;
 
 #sidebar .sidebar-header {
 padding: 20px;
-background: #6d7fcc;
+background: #5c743d;
 }
 
 #sidebar ul.components {
 padding: 20px 0;
-border-bottom: 1px solid #47748b;
+border-bottom: 1px solid #FFFF99;
 }
 
 #sidebar ul p {
@@ -110,14 +109,14 @@ display: block;
 }
 
 #sidebar ul li a:hover {
-color: #7386D5;
-background: #fff;
+color: #993300;
+background: #99cc66;
 }
 
 #sidebar ul li.active > a,
 a[aria-expanded="true"] {
-color: #fff;
-background: #6d7fcc;
+color: #993300;
+background: #99cc66;
 }
 
 a[data-toggle="collapse"] {
@@ -141,7 +140,7 @@ content: '\e260';
 ul ul a {
 font-size: 0.9em !important;
 padding-left: 30px !important;
-background: #6d7fcc;
+background: #FFFF99;
 }
 
 ul.CTAs {
@@ -189,10 +188,11 @@ color:
 
 @media (max-width: 768px) {
 #sidebar {
-  margin-left: -250px;
+  margin-left: 0px;
 }
 #sidebar.active {
   margin-left: 0;
+  margin-left:-150px;
 }
 #sidebarCollapse span {
   display: none;
@@ -214,50 +214,74 @@ color:
   <!-- Sidebar Holder -->
   <nav id="sidebar">
     <div class="sidebar-header">
-      <h3>Bootstrap Sidebar</h3>
-
+      <h3>MENU</h3>
     </div>
 
     <ul class="list-unstyled components">
-      <p>Dummy Heading</p>
       <li class="active">
-        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Accueil</a>
         <ul class="collapse list-unstyled" id="homeSubmenu">
-          <li><a href="#">Home 1</a></li>
-          <li><a href="#">Home 2</a></li>
-          <li><a href="#">Home 3</a></li>
+          <li><a href="#">Notre association</a></li>
+          <li><a href="#">La Garde d'enfants à domicile</a></li>
+          <li><a href="#">Les traveaux ménagers</a></li>
         </ul>
       </li>
       <li>
-        <a href="#">About</a>
+        <a href="#documentsSubmenu" data-toggle="collapse" aria-expanded="false">Documents</a>
+        <ul class="collapse list-unstyled" id="documentsSubmenu">
+          <li><a href="#">Documents pour intervenants</a></li>
+        </ul>
+      </li>
+      <li>
         <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
         <ul class="collapse list-unstyled" id="pageSubmenu">
-          <li><a href="#">Page 1</a></li>
-          <li><a href="#">Page 2</a></li>
-          <li><a href="#">Page 3</a></li>
+          <li><a href="#">Des services de qualité</a></li>
+          <li><a href="#">Prévention des risques professionnels</a></li>
+          <li><a href="#">Sorties et activités pour les petits et les grands</a></li>
         </ul>
       </li>
       <li>
-        <a href="#">Portfolio</a>
+        <a href="#">Nos tarifs</a>
       </li>
       <li>
         <a href="#">Contact</a>
       </li>
     </ul>
-
-    <ul class="list-unstyled CTAs">
-      <li><a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to the article</a></li>
-    </ul>
   </nav>
 
   <!-- Page Content Holder -->
   <div id="content">
-          <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-                                <i class="glyphicon glyphicon-align-left"></i>
-                                <span>Toggle Sidebar</span>
-                            </button>
       <div class="container-fluid">
-    <h2>Collapsible Sidebar Using Bootstrap 3</h2>
+        <button type="button" id="sidebarCollapse" class="btn navbar-btn" style="background-color : #5c743d; color : #993300">
+          <i class="glyphicon glyphicon-menu-hamburger"></i>
+        </button>
+        <div class="jumbotron" style="background-color : #d5edb3">
+            <div class="row">
+                <div class="col-4 col-sm-4">
+                   <img src="assets/images/oursonsanslogo.JPG"></img>
+                </div>
+                <div class="col-8 col-sm-8">
+                  <p class="Style11">
+                    <big>La Maison des Chaudoudoux</big>
+                  </p>
+                  <p class="Style12">
+                    <big>Association de garde d'enfants à domicile</big>
+                  </p>
+                </div>
+            </div>
+        </div>
+    <h2>Vous êtes à la recherche d'un mode de garde occasionnel ou régulier ?</h2>
+
+    <p>Nous sommes une association spécialisée dans le placement d’intervenants au domicile des particuliers pour la garde d'enfants et l'entretien du domicile.</p>
+
+    <p>L'association est agréée pour la garde d'enfants de moins de 3 ans et déclarée auprès de la DIRECCTE (Direction Régionale des Entreprises, de la Concurrence, de la Consommation, du Travail, et de l'Emploi) pour la garde d'enfants de 3 à 6
+      ans et le ménage, repassage.
+      Présente à Rennes depuis 1993, cette association regroupe des parents employeurs vous proposant le savoir-faire et les compétences de toute une structure SOLIDAIRE dans la promotion de l’emploi familial.</p>
+
+    <p>Nous trouvons une garde d'enfants adapter à vos besoins, qu'il s'agisse de sorties d'école, de garde à temps plein ou de garde ponctuelle. Notre secteur d'intervention s'étend sur toute l'Ille et Vilaine. En semaine, en soirée, la nuit ou
+      les week-ends, une intervenante sérieuse et expérimentée peut venir chez vous, prendre soin de vos enfants dès leur naissance !</p>
+    </div>
+  </div>
 </body>
 
 </html>
