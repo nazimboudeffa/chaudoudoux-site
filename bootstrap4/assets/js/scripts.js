@@ -13,7 +13,7 @@ function scroll_to(clicked_link, nav_height) {
 
 
 jQuery(document).ready(function() {
-	
+
 	/*
 	    Sidebar
 	*/
@@ -43,7 +43,7 @@ jQuery(document).ready(function() {
 	$('.sidebar').mCustomScrollbar({
 		theme: "minimal-dark"
 	});
-	
+
 	/*
 	    Navigation
 	*/
@@ -51,7 +51,7 @@ jQuery(document).ready(function() {
 		e.preventDefault();
 		scroll_to($(this), 0);
 	});
-	
+
 	$('.to-top a').on('click', function(e) {
 		e.preventDefault();
 		if($(window).scrollTop() != 0) {
@@ -86,13 +86,13 @@ jQuery(document).ready(function() {
     */
 	$('.top-content').backstretch("assets/img/backgrounds/1.jpg");
     $('.section-4-container').backstretch("assets/img/backgrounds/2.jpg");
-    $('.section-6-container').backstretch("assets/img/backgrounds/1.jpg");
-    
+    $('.section-6-container').backstretch("assets/img/backgrounds/4.jpg");
+
     /*
 	    Wow
 	*/
 	new WOW().init();
-	
+
 	/*
 	    Contact form
 	*/
@@ -127,5 +127,5 @@ jQuery(document).ready(function() {
 	        }
 	    });
 	});
-	
+
 });
